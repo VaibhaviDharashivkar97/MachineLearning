@@ -1,0 +1,28 @@
+Question 1 - Data Analysis and Visualization 
+For Questions 1 and 2, we will use two data sets:
+• Frogs-subsample.csv, and • Frogs.csv,
+The features are Mel Frequency Cepstrum Coefficients (MFCCs) representing two frequency band intensities measured from South American frog calls in audio recordings. There are two species of frog in the data sets. This data was selected from the Anuran Calls dataset available from the UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/ Anuran+Calls+%28MFCCs%29. The subsampled data set was producing by obtaining a (class-)balanced random sample (25 instances per class).
+a. Visualization. Separately for each of Frogs-subsample.csv and Frogs.csv, use numpy and matplotlib to produce the following:
+• Plotting Raw Features
+• A scatter plot of the ‘raw’ samples (both features, separate color for each class)
+• For each frog class in the file:
+• 2 histograms (1 per feature/attribute)
+• 2 line graphs (1 per feature/attribute - after sorting feature values)
+• Plotting Feature Distributions
+• A boxplot showing the distribution of features for both classes (For each class, 1 box+whiskers per feature; 4 boxes total)
+• Bar graph with error bars (For each class, 1 error bar per feature; 4 errors bars total)
+b. Descriptive Statistics. Separately for each data set, use numpy to compute 1) the mean (expected value), 2) covariance matrix, and 3) standard deviation for each individual feature.
+
+
+Question 2 - The Effect of Training Data 
+Using numpy (or PyTorch) create a binary classifier for the data in each file using a single logistic regressor (i.e., a single ‘perceptron’ using the sigmoid activation function). Create a scatter plot for each data set, and then visualize the class regions and decision boundaries.
+
+
+Question 3 - Let Us Not Forget Probability!
+• In creating a product, 85% are produced without defects. Of the products inspected, 10% of the good ones are seen as defective and not shipped, while only 5% of the defective products are approved and shipped. If a product is shipped, what is the probability that it has a defect?
+• Consider randomly generated bit strings of length four. Demonstrate whether or not the event of generating bit string with an even number of 1's is independent of the event producing bit strings that end in 1.
+• Let’s flip a (fair) coin n times to generate a dataset, where we choose to represent the state of the coin, i.e., heads or tails, as the variable X = {0, 1}, where the first attribute value represents “tails” and the other “heads”. Suppose that the experiment’s outcome yields the following state sequence:
+S = {1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0}
+Estimate the probability that p(X = 1) from the data, using a maximum likelihood approach (Hint: the frequency approach). Also, what is the probability of getting tails under the sequence above, or
+p(X = 0)?
+Bonus: Provide a maximum a posteriori (MAP) estimate of the probability of getting a heads, p(X = 1) assuming this prior belief about the coin being fair. (Hint: Adapt your MLE estimate to account for your prior, and since this is a coin toss, or a Bernoulli random variate.)
